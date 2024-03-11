@@ -22,4 +22,4 @@ Suggests:
 URL: https://github.com/lchiffon/wordcloud2
 BugReports: https://github.com/lchiffon/wordcloud2/issues
 Maintainer: Dawei Lang <chiffonlang@icloud.com>
-RoxygenNote: 6.0.1.9000
+RoxygenNote: 7.3.1

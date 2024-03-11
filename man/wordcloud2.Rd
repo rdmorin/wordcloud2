@@ -36,6 +36,8 @@ color vector is also supported in this param}
 \item{maxRotation}{If the word should rotate, the maximum rotation (in rad) the text should rotate.
 Set the two value equal to keep all text in one angle.}
 
+\item{rotationSteps}{Total number of rotation options allowed}
+
 \item{shuffle}{Shuffle the points to draw so the result will be different each time for the same list and settings.}
 
 \item{rotateRatio}{Probability for the word to rotate. Set the number to 1 to always rotate.}

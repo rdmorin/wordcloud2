@@ -25,11 +25,12 @@
 ##' (in rad) the text should rotate.
 ##' @param maxRotation If the word should rotate, the maximum rotation (in rad) the text should rotate.
 ##' Set the two value equal to keep all text in one angle.
+##' @param rotationSteps Total number of rotation options allowed
 ##' @param shuffle  Shuffle the points to draw so the result will be different each time for the same list and settings.
 ##' @param rotateRatio Probability for the word to rotate. Set the number to 1 to always rotate.
 ##' @param shape The shape of the "cloud" to draw. Can be a keyword present. Available presents are 'circle'
 ##'  (default), 'cardioid' (apple or heart shape curve, the most known polar equation),
-##'  'diamond' (alias of square), 'triangle-forward', 'triangle', 'pentagon', and 'star'.
+##'  'diamond' (alias of square), 'triangle-forward', 'triangle', 'pentagon', 'brain', and 'star'.
 ##' @param ellipticity degree of "flatness" of the shape wordcloud2.js should draw.
 ##' @param figPath The path to a figure used as a mask.
 ##' @param widgetsize size of the widgets
@@ -86,6 +87,7 @@ wordcloud2 <- function(data,
                        backgroundColor = "white",
                        minRotation = -pi/4,
                        maxRotation = pi/4,
+                       rotationSteps = 6,
                        shuffle = TRUE,
                        rotateRatio = 0.4,
                        shape = 'circle',
@@ -140,6 +142,7 @@ wordcloud2 <- function(data,
     gridSize =  gridSize,
     minRotation = minRotation,
     maxRotation = maxRotation,
+    rotationSteps = rotationSteps,
     shuffle = shuffle,
     rotateRatio = rotateRatio,
     shape = shape,
@@ -147,7 +150,6 @@ wordcloud2 <- function(data,
     figBase64 = base64,
     hover = htmlwidgets::JS(hoverFunction)
   )
-
 
   htmlwidgets::createWidget("wordcloud2", settings,
                             width = widgetsize[1],

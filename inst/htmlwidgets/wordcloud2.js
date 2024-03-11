@@ -35,6 +35,7 @@ HTMLWidgets.widget({
                         backgroundColor: x.backgroundColor,
                         gridSize: x.gridSize,
                         minRotation: x.minRotation,
+                        rotationSteps: x.rotationSteps,
                         maxRotation: x.maxRotation,
                         shuffle: x.shuffle,
                         shape: x.shape,
