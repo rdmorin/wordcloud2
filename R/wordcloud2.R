@@ -30,7 +30,7 @@
 ##' @param rotateRatio Probability for the word to rotate. Set the number to 1 to always rotate.
 ##' @param shape The shape of the "cloud" to draw. Can be a keyword present. Available presents are 'circle'
 ##'  (default), 'cardioid' (apple or heart shape curve, the most known polar equation),
-##'  'diamond' (alias of square), 'triangle-forward', 'triangle', 'pentagon', 'brain', and 'star'.
+##'  'diamond' (alias of square), 'triangle-forward', 'triangle', 'pentagon', 'brain', 'star8', 'box', and 'star'.
 ##' @param ellipticity degree of "flatness" of the shape wordcloud2.js should draw.
 ##' @param figPath The path to a figure used as a mask.
 ##' @param widgetsize size of the widgets
